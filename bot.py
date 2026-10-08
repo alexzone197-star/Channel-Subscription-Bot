@@ -116,7 +116,7 @@ def finalize_channel(message, ch_id, ch_name):
         bot_username = bot.get_me().username
         bot.send_message(ADMIN_ID, f"✅ Setup Successful!\n\nInvite Link for users:\n`https://t.me/{bot_username}?start={ch_id}`", parse_mode="Markdown")
     except:
-        bot.send_message(ADMIN_ID, "❌ Invalid format. Please use `Min:Price, Min:Price`. Use /add to retry.")
+        bot.send_message(ADMIN_ID, f"❌ Actual Error: {e}")
 
 # --- USER: PAYMENT FLOW ---
 
